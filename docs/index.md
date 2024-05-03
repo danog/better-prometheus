@@ -87,4 +87,4 @@ $summary->observe(5, ['type' => 'blue']);
 
 ## API documentation
 
-See [here &raquo;](https://github.com/danog/better-prometheus/blob/master/docs/docs/index.md) for the full API documentation.  
+See [here &raquo;](https://daniil.it/better-prometheus/docs/) for the full API documentation.  
