@@ -2,7 +2,7 @@
 
 [![Psalm coverage](https://shepherd.dev/github/danog/better-prometheus/coverage.svg)](https://shepherd.dev/github/danog/better-prometheus)
 [![Psalm level 1](https://shepherd.dev/github/danog/better-prometheus/level.svg)](https://shepherd.dev/github/danog/better-prometheus)
-![License](https://img.shields.io/github/license/danog/better-prometheus)
+![License](https://img.shields.io/github/license/danog/better-prometheus?v)
 
 A better Prometheus library for PHP applications.  
 
