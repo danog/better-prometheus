@@ -10,6 +10,8 @@ use Prometheus\MetricFamilySamples;
 use Prometheus\Storage\Adapter;
 
 /**
+ * A better collector registry.
+ *
  * @api
  */
 final class BetterCollectorRegistry
@@ -47,7 +49,6 @@ final class BetterCollectorRegistry
         public readonly Adapter $storageAdapter,
         bool $registerDefaultMetrics = true
     ) {
-        $this->storageAdapter = $storageAdapter;
         if ($registerDefaultMetrics) {
             $this->defaultGauge = $this->getOrRegisterGauge(
                 "",
@@ -69,7 +70,7 @@ final class BetterCollectorRegistry
 
     /**
      * @psalm-suppress TooManyArguments
-     * 
+     *
      * @return list<MetricFamilySamples>
      */
     public function getMetricFamilySamples(bool $sortMetrics = true): array

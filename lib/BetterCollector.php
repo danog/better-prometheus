@@ -45,9 +45,9 @@ abstract class BetterCollector
         }
     }
 
-    /** 
+    /**
      * Create a new instance of this collector, with these additional labels.
-     * 
+     *
      * @param array<string, string> $labels
      */
     abstract public function addLabels(array $labels): static;
