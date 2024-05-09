@@ -36,7 +36,7 @@ final class BetterGauge extends BetterCollector
         $labels = $this->labels + $labels;
         $this->storageAdapter->updateGauge(
             [
-                'name' => $this->name,
+                'name' => $this->metricName,
                 'help' => $this->help,
                 'type' => self::TYPE,
                 'labelNames' => \array_keys($labels),

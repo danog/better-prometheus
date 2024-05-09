@@ -5,6 +5,9 @@ $config = new class extends Amp\CodeStyle\Config {
     {
         return array_merge(parent::getRules(), [
             'void_return' => true,
+            'phpdoc_to_param_type' => true,
+            'phpdoc_to_return_type' => true,
+            'phpdoc_to_property_type' => true,
         ]);
     }
 };

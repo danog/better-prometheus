@@ -93,10 +93,10 @@ final class BetterSummary extends BetterCollector
     }
 
     /**
-     * @param double $value e.g. 123
+     * @param double|int $value e.g. 123
      * @param array<string, string> $labels e.g. ['status' => '404', 'opcode' => 'SOME_OP']
      */
-    public function observe(float $value, array $labels = []): void
+    public function observe(float|int $value, array $labels = []): void
     {
         self::assertValidLabels($labels);
         $labels = $this->labels + $labels;

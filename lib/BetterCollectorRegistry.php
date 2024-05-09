@@ -87,7 +87,7 @@ final class BetterCollectorRegistry
      *
      * @throws MetricsRegistrationException
      */
-    public function registerGauge(string $namespace, string $name, string $help, $labels = []): BetterGauge
+    public function registerGauge(string $namespace, string $name, string $help, array $labels = []): BetterGauge
     {
         $metricIdentifier = "$namespace:$name";
         if (isset($this->gauges[$metricIdentifier])) {
@@ -123,7 +123,7 @@ final class BetterCollectorRegistry
      *
      * @throws MetricsRegistrationException
      */
-    public function getOrRegisterGauge(string $namespace, string $name, string $help, $labels = []): BetterGauge
+    public function getOrRegisterGauge(string $namespace, string $name, string $help, array $labels = []): BetterGauge
     {
         try {
             $gauge = $this->getGauge($namespace, $name);
@@ -141,7 +141,7 @@ final class BetterCollectorRegistry
      *
      * @throws MetricsRegistrationException
      */
-    public function registerCounter(string $namespace, string $name, string $help, $labels = []): BetterCounter
+    public function registerCounter(string $namespace, string $name, string $help, array $labels = []): BetterCounter
     {
         $metricIdentifier = "$namespace:$name";
         if (isset($this->counters[$metricIdentifier])) {
@@ -178,7 +178,7 @@ final class BetterCollectorRegistry
      *
      * @throws MetricsRegistrationException
      */
-    public function getOrRegisterCounter(string $namespace, string $name, string $help, $labels = []): BetterCounter
+    public function getOrRegisterCounter(string $namespace, string $name, string $help, array $labels = []): BetterCounter
     {
         try {
             $counter = $this->getCounter($namespace, $name);

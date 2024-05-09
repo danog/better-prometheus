@@ -79,7 +79,7 @@ final class BetterHistogram extends BetterCollector
     }
 
     /**
-     * @param double $value e.g. 123
+     * @param double|int $value e.g. 123
      * @param array<string, string> $labels e.g. ['status' => '201', 'opcode' => 'SOME_OP']
      */
     public function observe(float|int $value, array $labels = []): void
