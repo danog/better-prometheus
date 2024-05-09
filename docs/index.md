@@ -13,7 +13,7 @@ A better Prometheus library for PHP applications
 * [\danog\BetterPrometheus\BetterCollector: A better prometheus collector.](danog/BetterPrometheus/BetterCollector.md)
 
 ## Classes
-* [\danog\BetterPrometheus\BetterCollectorRegistry](danog/BetterPrometheus/BetterCollectorRegistry.md)
+* [\danog\BetterPrometheus\BetterCollectorRegistry: A better collector registry.](danog/BetterPrometheus/BetterCollectorRegistry.md)
 * [\danog\BetterPrometheus\BetterCounter: A better prometheus counter.](danog/BetterPrometheus/BetterCounter.md)
 * [\danog\BetterPrometheus\BetterGauge: A better prometheus gauge.](danog/BetterPrometheus/BetterGauge.md)
 * [\danog\BetterPrometheus\BetterHistogram: A better prometheus histogram.](danog/BetterPrometheus/BetterHistogram.md)

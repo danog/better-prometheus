@@ -1,5 +1,5 @@
 ---
-title: "danog\\BetterPrometheus\\BetterCollectorRegistry: "
+title: "danog\\BetterPrometheus\\BetterCollectorRegistry: A better collector registry."
 description: ""
 
 ---
@@ -9,7 +9,7 @@ description: ""
 > Author: Daniil Gentili <daniil@daniil.it>  
   
 
-  
+A better collector registry.  
 
 
 

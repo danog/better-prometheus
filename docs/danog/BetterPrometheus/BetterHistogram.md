@@ -27,7 +27,7 @@ A better prometheus histogram.
 ## Method list:
 * [`__construct(\Prometheus\Storage\Adapter $adapter, string $namespace, string $name, string $help, array<string, string> $labels = [], (non-empty-list<float>|null) $buckets = NULL)`](#__construct)
 * [`addLabels(array $labels): static`](#addLabels)
-* [`observe(double $value, array<string, string> $labels = []): void`](#observe)
+* [`observe((double|int) $value, array<string, string> $labels = []): void`](#observe)
 
 ## Methods:
 ### <a name="__construct"></a> `__construct(\Prometheus\Storage\Adapter $adapter, string $namespace, string $name, string $help, array<string, string> $labels = [], (non-empty-list<float>|null) $buckets = NULL)`
@@ -63,14 +63,14 @@ Parameters:
 
 
 
-### <a name="observe"></a> `observe(double $value, array<string, string> $labels = []): void`
+### <a name="observe"></a> `observe((double|int) $value, array<string, string> $labels = []): void`
 
 
 
 
 Parameters:
 
-* `$value`: `double` e.g. 123  
+* `$value`: `(double|int)` e.g. 123  
 * `$labels`: `array<string, string>` e.g. ['status' => '201', 'opcode' => 'SOME_OP']  
 
 
